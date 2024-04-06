@@ -1,0 +1,65 @@
+
+/* Site and object formatting */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    height: 100%;
+    width: 100%;    
+    background-color: #2f3f47;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Text formatting */
+.big-text {
+    background-color: whitesmoke;
+    font-size: 4rem;
+    font-family: Baskerville;
+    color: black;
+}
+
+/* Navbar formatting */
+
+.nav {
+    padding: 20px;
+    background-color: #7b7f78;
+    overflow: hidden;
+    border-radius: 2px;
+}
+.nav a {
+    font-size: 1rem;
+    font-weight: 530;
+    font-family: Baskerville;
+    color: #e4e5e4;
+    text-align: center;
+    padding: 1vw;
+    display:flexbox;
+
+    text-decoration: none;
+}
+.nav a:hover {
+    background-color: #8a8e86;
+    -webkit-transition: background-color 50ms ease-in;
+    transition: background-color 50ms ease-in;
+    -webkit-transition-delay: 50ms;
+    transition-delay: 50ms;
+    color:black;
+    border-radius: 10px;
+}
+.nav a:active {
+    text-decoration-line: underline;
+    text-decoration-color: white;
+}
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
