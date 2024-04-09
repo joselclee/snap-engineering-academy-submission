@@ -158,6 +158,7 @@ function createCard(car) {
     return card;
 }
 
+// Create a car object
 function createCar(manufacturer, model, year, topSpeed, engineDisplacement, engineHorsepower, engineMaxTorque, engineType, picture) {
     let car = {
         'picture': picture,
@@ -176,6 +177,7 @@ function createCar(manufacturer, model, year, topSpeed, engineDisplacement, engi
     return car;
 }
 
+// Select the div to append the cards
 let container = document.querySelector('.card-container');
 if (container) {
     for (currentIndex = 0; currentIndex < 3; currentIndex++) {
@@ -184,11 +186,14 @@ if (container) {
     }
 }
 
+// Create a listing for the cars list
 function createListing(car) {
     let listItem = document.createElement('li');
     listItem.textContent = car.manufacturer + ' ' + car.model;
     return listItem;
 }
+
+// Select the div to append the list
 let container2 = document.querySelector('.list-container');
 
 for (let i = 0; i < cars.length; i++) {
@@ -196,8 +201,10 @@ for (let i = 0; i < cars.length; i++) {
     container2.appendChild(listItem);
 }
 
+// Add a car to the list
 let listing = document.getElementById('add-car');
 
+// When user clicks button, all inputs are sent to the createCar function which creates a new car to be added to the list
 if (listing) {
     document.getElementById('add-car').addEventListener('click', function() {
         let picture = document.getElementById('picture').value;
